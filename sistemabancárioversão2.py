@@ -75,9 +75,7 @@ def criar_usuario(usuarios):
 
     nome = input("\033[0mInforme o nome completo: ")
     data_nascimento = input("\033[0mInforme a data de nascimento (dd-mm-aaaa): ")
-    endereco = input(
-        "\033[0mInforme o endereço (logadouro, nro - bairro - cidade/sigla estado): "
-    )
+    endereco = input("\033[0mInforme o endereço (logadouro, nro - bairro - cidade/sigla estado): ")
 
     usuarios.append(
         {
@@ -104,9 +102,7 @@ def criar_conta(agencia, numero_conta, usuarios):
         print("\n\033[33m=== Conta cadastrada com sucesso! ===")
         return {"agencia": agencia, "numero_conta": numero_conta, "usuario": usuario}
 
-    print(
-        "\n\033[31mUsuário não encontrado, fluxo de cadastro de conta encerrado!"
-    )
+    print("\n\033[31mUsuário não encontrado, fluxo de cadastro de conta encerrado!")
 
 
 def listar_contas(contas):
@@ -173,9 +169,7 @@ def main():
             break
 
         else:
-            print(
-                "\033[31mOperação inválida, por favor selecione novamente a opção desejada."
-            )
+            print("\033[31mOperação inválida, por favor selecione novamente a opção desejada.")
 
 
 main()
