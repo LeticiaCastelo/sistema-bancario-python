@@ -17,7 +17,7 @@ def menu():
     [LC]\tListar contas
     [NU]\tNovo usuário
     [Q]\tSair
-    \033[1m=> Selecione uma opção: """  # Menu de opções disponível
+    \033[1m=> Selecione uma opção: """  # Menu de opções disponíveis
     return input(textwrap.dedent(menu))
 
 
