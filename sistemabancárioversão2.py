@@ -4,9 +4,7 @@ from time import sleep  # Para finalizar o programa
 print(20 * "\033[34m=-")
 print("{:^35}".format("CLASSIC BANK"))
 print(20 * "=-")
-print(
-    "{:^40}".format("\033[1mWelcome to Classic Bank!")
-)  # Cordialidade para ficar bonito
+print("{:^40}".format("\033[1mWelcome to Classic Bank!"))  # Cordialidade para ficar bonito
 
 
 def menu():
