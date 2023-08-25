@@ -77,14 +77,7 @@ def criar_usuario(usuarios):
     data_nascimento = input("\033[0mInforme a data de nascimento (dd-mm-aaaa): ")
     endereco = input("\033[0mInforme o endereço (logadouro, nro - bairro - cidade/sigla estado): ")
 
-    usuarios.append(
-        {
-            "nome": nome,
-            "data_nascimento": data_nascimento,
-            "cpf": cpf,
-            "endereco": endereco,
-        }
-    )
+    usuarios.append({"nome": nome,"data_nascimento": data_nascimento, "cpf": cpf, "endereco": endereco,})
 
     print("\033[33m=== Usuário cadastrado com sucesso! ===")
 
@@ -127,7 +120,7 @@ def main():
     usuarios = []
     contas = []
 
-    while True:  # .upper() para a resposta dada ficar em maiúsculo
+    while True:                              # .upper() para a resposta dada ficar em maiúsculo
         opcao = str(menu()).strip().upper()  # .strip() para remover espaços inúteis.
 
         if opcao == "D":
